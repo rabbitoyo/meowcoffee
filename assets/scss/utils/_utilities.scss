@@ -1,0 +1,62 @@
+// font-size-responsive
+$utilities: map-merge(
+    $utilities,(
+        "font-size":
+        map-merge(
+            map-get($utilities, "font-size"),(
+                responsive: true
+            )
+        ),
+    )
+);
+
+// font-size
+$mobile-font-sizes: (
+    "display-1": 2,
+    h1: 2,
+    h2: 1.75,
+    h3: 1.5,
+    h4: 1.25,
+    h5: 1.125,
+    h6: .875,
+);
+
+@include media-breakpoint-down(md) {
+    @each $name, $size in $mobile-font-sizes {
+        #{$name}, .#{$name} {
+            font-size: $font-size-base * $size;
+        }
+    }
+}
+
+// pseudo
+@mixin pseudo {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+// border
+.border-bottom-dash {
+    border-bottom: 1px dashed $natural-85;
+}
+.border-top-dash {
+    border-top: 1px dashed $natural-85;
+}
+
+// link
+.link-light {
+    &:hover, &:focus {
+        color: $white !important;
+        text-decoration-color: $white !important;
+        text-decoration: underline;
+    }
+}
+
+.link-dark {
+    &:hover, &:focus {
+        color: $black !important;
+        text-decoration-color: $black !important;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,23 @@
+
+
+// bootstrap
+@import 'bootstrap/scss/functions';
+@import './utils/variables';
+@import 'bootstrap';
+
+// utils
+@import './utils/utilities';
+@import 'bootstrap/scss/utilities/api';
+
+// base
+@import './base/base';
+
+// components
+
+
+// layout
+@import './layout/header';
+@import './layout/footer';
+
+// pages
+@import './pages/index.scss';
