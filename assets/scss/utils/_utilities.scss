@@ -35,28 +35,3 @@ $mobile-font-sizes: (
     display: block;
     position: absolute;
 }
-
-// border
-.border-bottom-dash {
-    border-bottom: 1px dashed $natural-85;
-}
-.border-top-dash {
-    border-top: 1px dashed $natural-85;
-}
-
-// link
-.link-light {
-    &:hover, &:focus {
-        color: $white !important;
-        text-decoration-color: $white !important;
-        text-decoration: underline;
-    }
-}
-
-.link-dark {
-    &:hover, &:focus {
-        color: $black !important;
-        text-decoration-color: $black !important;
-        text-decoration: underline;
-    }
-}

@@ -2,16 +2,6 @@ body {
     letter-spacing: .02em;
 }
 
-.font-family-inter {
-    font-family: $font-family-inter;
-    font-weight: 750;
-    letter-spacing: .06em;
-
-    &.letter-sm {
-        letter-spacing: .02em;
-    }
-}
-
 a {
     display: inline-block;
     color: inherit;
