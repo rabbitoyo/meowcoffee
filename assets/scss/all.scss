@@ -1,4 +1,6 @@
-
+// font
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
 
 // bootstrap
 @import 'bootstrap/scss/functions';
@@ -13,6 +15,9 @@
 @import './base/base';
 
 // components
+@import './components/accordion';
+@import './components/button';
+@import './components/navbar';
 
 
 // layout

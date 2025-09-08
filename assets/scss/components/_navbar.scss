@@ -1,0 +1,11 @@
+.nav-link {
+    font-size: $h5-font-size;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-sm;
+}
+
+.navbar-toggler {
+    &:focus {
+        box-shadow: none;
+    }
+}

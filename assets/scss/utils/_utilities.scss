@@ -7,12 +7,22 @@ $utilities: map-merge(
                 responsive: true
             )
         ),
+        "opacity": (
+        property: opacity,
+            values: (
+                0: 0,
+                25: .25,
+                40: .4,
+                50: .5,
+                75: .75,
+                100: 1,
+            )
+        ),
     )
 );
 
 // font-size
 $mobile-font-sizes: (
-    "display-1": 2,
     h1: 2,
     h2: 1.75,
     h3: 1.5,
@@ -34,4 +44,8 @@ $mobile-font-sizes: (
     content: "";
     display: block;
     position: absolute;
+}
+
+.lh-0 {
+    line-height: 0;
 }
